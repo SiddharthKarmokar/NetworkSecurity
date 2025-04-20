@@ -1,0 +1,3 @@
+[ 2025-04-20 14:21:15,458 ] 100 root - INFO - Intiate data ingestion
+[ 2025-04-20 14:21:18,139 ] 64 root - INFO - Train and Test Split on the Dataframe
+[ 2025-04-20 14:21:18,180 ] 75 root - INFO - Exported train and test file path
