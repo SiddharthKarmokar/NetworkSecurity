@@ -1,6 +1,0 @@
-[ 2025-04-21 13:25:04,652 ] 12 root - INFO - Intiate data ingestion
-[ 2025-04-21 13:25:07,346 ] 64 root - INFO - Train and Test Split on the Dataframe
-[ 2025-04-21 13:25:07,386 ] 75 root - INFO - Exported train and test file path
-[ 2025-04-21 13:25:07,387 ] 14 root - INFO - Data ingestion completed
-[ 2025-04-21 13:25:07,387 ] 16 root - INFO - Initiated data validation
-[ 2025-04-21 13:25:07,393 ] 33 root - INFO - yaml file: data_schema\schema.yaml loaded successfully

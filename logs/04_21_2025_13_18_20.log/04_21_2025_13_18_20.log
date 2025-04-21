@@ -1,5 +1,0 @@
-[ 2025-04-21 13:18:22,000 ] 12 root - INFO - Intiate data ingestion
-[ 2025-04-21 13:18:25,151 ] 64 root - INFO - Train and Test Split on the Dataframe
-[ 2025-04-21 13:18:25,194 ] 75 root - INFO - Exported train and test file path
-[ 2025-04-21 13:18:25,195 ] 14 root - INFO - Data ingestion completed
-[ 2025-04-21 13:18:25,195 ] 16 root - INFO - Initiated data validation
