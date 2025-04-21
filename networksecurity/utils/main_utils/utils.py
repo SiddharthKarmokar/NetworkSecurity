@@ -103,3 +103,39 @@ def create_directories(path_to_directories:list, verbose=True):
         os.makedirs(path, exist_ok=True)
         if verbose:
             logger.logging.info(f"created directioy at: {path}")
+
+def save_numpy_array(file_path: str, array: np.array):
+    """Save numpy array to file path
+
+    Args:
+        file_path (str): Path to save array
+        array (numpy array): Array to save
+
+    Returns:
+        None  
+    """
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "wb") as file:
+            np.save(file, array)
+        logger.logging.info(f"Numpy array saved at {file_path}")
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+    
+def save_object(file_path: str, obj: object):
+    """Save object as pickle file
+    
+    Args:
+        file_path (str): Path to save array
+        object (object): any object
+    
+    Returns:
+        None
+    """
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "wb") as file:
+            pickle.dump(obj, file)
+        logger.logging.info(f"{obj} saved at {file_path} as pickle file")
+    except Exception as e:
+        NetworkSecurityException(e, sys)
