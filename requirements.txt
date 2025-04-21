@@ -4,5 +4,9 @@ numpy
 pymongo
 certifi
 scikit-learn
+pyaml
+dill
+box
+ensure
 
 ##-e .
