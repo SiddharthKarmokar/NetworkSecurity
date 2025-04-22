@@ -139,3 +139,39 @@ def save_object(file_path: str, obj: object):
         logger.logging.info(f"{obj} saved at {file_path} as pickle file")
     except Exception as e:
         NetworkSecurityException(e, sys)
+
+def load_object(file_path):
+    """load pickle object from file path
+    
+    Args:
+        file_path (str): Path to file 
+    
+    Returns:
+        file
+    """
+    try:
+        if not os.path.exists(file_path):
+            raise Exception(f"File path {file_path} does not exist")
+        else:
+            with open(file_path, "rb") as file:
+                return pickle.load(file)
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+    
+def load_numpy_array(file_path):
+    """load numpy array from file path
+    
+    Args:
+        file_path (str): Path to numpy array 
+    
+    Returns:
+        numpy array
+    """
+    try:
+        if not os.path.exists(file_path):
+            raise Exception(f"File path {file_path} does not exist")
+        else:
+            with open(file_path, "rb") as file:
+                return np.load(file)
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)

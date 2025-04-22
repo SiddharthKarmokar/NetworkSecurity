@@ -5,8 +5,6 @@ pymongo
 certifi
 scikit-learn
 pyaml
-dill
-box
-ensure
+mlflow
 
 ##-e .
