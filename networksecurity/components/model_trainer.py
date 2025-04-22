@@ -10,6 +10,8 @@ from sklearn.ensemble import (
     RandomForestClassifier
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='SiddharthKarmokar', repo_name='NetworkSecurity', mlflow=True)
 
 import networksecurity.logging as logger
 from networksecurity.exception.exception import NetworkSecurityException
@@ -101,6 +103,7 @@ class ModelTrainer:
         
         Network_Model = NetworkModel(preprocessor=preprocessor, model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path, Network_Model)
+        save_object("final_model/model.pkl", best_model)
         model_trainer_artifact = ModelTrainerArtifact(
             trained_model_file_path=self.model_trainer_config.trained_model_file_path,
             train_model_artifact=train_classification_metric,
