@@ -1,0 +1,137 @@
+|-- .env
+|-- .github
+|   `-- workflows
+|       `-- main.yml
+|-- .gitignore
+|-- Artifacts
+|   |-- 04_23_2025_15_18_15
+|   |   |-- data_ingestion
+|   |   |   |-- feature_store
+|   |   |   |   `-- phisingData.csv
+|   |   |   `-- ingested
+|   |   |       |-- test.csv
+|   |   |       `-- train.csv
+|   |   |-- data_transformation
+|   |   |   |-- transformed
+|   |   |   |   |-- test.npy
+|   |   |   |   `-- train.npy
+|   |   |   `-- transformed_object
+|   |   |       `-- preprocessing.pkl
+|   |   |-- data_validation
+|   |   |   |-- drift_report
+|   |   |   |   `-- report.yaml
+|   |   |   `-- validated
+|   |   |       |-- test.csv
+|   |   |       `-- train.csv
+|   |   `-- model_trainer
+|   |       `-- trained_model
+|   |           `-- model.pkl
+|   `-- 04_23_2025_15_24_07
+|       |-- data_ingestion
+|       |   |-- feature_store
+|       |   |   `-- phisingData.csv
+|       |   `-- ingested
+|       |       |-- test.csv
+|       |       `-- train.csv
+|       |-- data_transformation
+|       |   |-- transformed
+|       |   |   |-- test.npy
+|       |   |   `-- train.npy
+|       |   `-- transformed_object
+|       |       `-- preprocessing.pkl
+|       |-- data_validation
+|       |   |-- drift_report
+|       |   |   `-- report.yaml
+|       |   `-- validated
+|       |       |-- test.csv
+|       |       `-- train.csv
+|       `-- model_trainer
+|           `-- trained_model
+|               `-- model.pkl
+|-- Dockerfile
+|-- Network_data
+|   `-- phisingData.csv
+|-- README.md
+|-- app.py
+|-- data_schema
+|   `-- schema.yaml
+|-- final_model
+|   |-- model.pkl
+|   `-- preprocessor.pkl
+|-- giffer.py
+|-- images
+|   |-- 1.png
+|   |-- 10.png
+|   |-- 11.png
+|   |-- 2.png
+|   |-- 3.png
+|   |-- 4.png
+|   |-- 5.png
+|   |-- 6.png
+|   |-- 7.png
+|   |-- 8.png
+|   `-- 9.png
+|-- logs
+|   |-- 04_23_2025_15_17_10.log
+|   |   `-- 04_23_2025_15_17_10.log
+|   |-- 04_23_2025_15_18_13.log
+|   |   `-- 04_23_2025_15_18_13.log
+|   |-- 04_23_2025_15_24_06.log
+|   |   `-- 04_23_2025_15_24_06.log
+|   |-- 04_24_2025_08_23_48.log
+|   |   `-- 04_24_2025_08_23_48.log
+|   `-- 04_24_2025_08_30_08.log
+|       `-- 04_24_2025_08_30_08.log
+|-- main.py
+|-- networksecurity
+|   |-- __init__.py
+|   |-- cloud
+|   |   |-- __init__.py
+|   |   `-- s3_syncer.py
+|   |-- components
+|   |   |-- __init__.py
+|   |   |-- data_ingestion.py
+|   |   |-- data_transformation.py
+|   |   |-- data_validation.py
+|   |   `-- model_trainer.py
+|   |-- constants
+|   |   |-- __init__.py
+|   |   `-- training_pipeline
+|   |       `-- __init__.py
+|   |-- entity
+|   |   |-- __init__.py
+|   |   |-- artifacts_entity.py
+|   |   `-- constant_entity.py
+|   |-- exception
+|   |   |-- __init__.py
+|   |   `-- exception.py
+|   |-- logging
+|   |   `-- __init__.py
+|   |-- pipeline
+|   |   |-- __init__.py
+|   |   `-- training_pipeline.py
+|   `-- utils
+|       |-- __init__.py
+|       |-- main_utils
+|       |   |-- __init__.py
+|       |   `-- utils.py
+|       `-- ml_utils
+|           |-- __init__.py
+|           |-- metric
+|           |   |-- __init__.py
+|           |   `-- classification_metric.py
+|           `-- model
+|               |-- __init__.py
+|               `-- estimator.py
+|-- notebooks
+|-- predicted_results
+|-- push_data.py
+|-- requirements.txt
+|-- setup.py
+|-- slider.gif
+|-- struc.py
+|-- structure.txt
+|-- templates
+|   `-- index.html
+`-- test_data
+    `-- test.csv
