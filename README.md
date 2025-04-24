@@ -11,7 +11,7 @@ This repository contains a full-stack, AI-driven phishing detection pipeline. It
 
 ```
 .
-├── app.py                     # Streamlit or Flask app entry point
+├── app.py                    # App entry point
 ├── main.py                   # Entry to start the training pipeline
 ├── final_model/              # Stores final model and preprocessor
 ├── Artifacts/                # Versioned training artifacts
@@ -21,7 +21,7 @@ This repository contains a full-stack, AI-driven phishing detection pipeline. It
 │   ├── pipeline/             # Training pipeline execution script
 │   ├── cloud/                # AWS sync utilities
 │   ├── utils/                # Utility modules (ML, metrics, etc.)
-├── templates/                # Web templates (e.g., for Flask)
+├── templates/                # Web templates
 ├── images/                   # Static images used in the app or for visualization
 ├── giffer.py                 # GIF creation script from images
 ├── slider.gif                # Combined visualization from phishing detection outputs
